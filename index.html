@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu-box">
+      <span class="line line-1"></span>
+      <span class="line line-2"></span>
+      <span class="line line-3"></span>
+    </div>
+    <div class="navbar">
+      <div class="user">
+        <i class="fa-solid fa-circle-user"></i>
+        <h4>User Name</h4>
+      </div>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Completed</a></li>
+        <li><a href="#">Trash</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1 class="heading">Nayan's Todo List</h1>
+      <form class="form">
+        <div class="inp-btn">
+          <input
+            type="text"
+            class="todo-input common-style"
+            id="nayan"
+            placeholder="Add Task"
+          />
+          <button class="todo-button common-style">
+            <i class="fa-solid fa-square-plus"></i>
+          </button>
+        </div>
+        <div class="select">
+          <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <!--New Container With Lists of Newly Added Tasks-->
+    <div class="todo-container">
+      <ul class="todo-lists"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
